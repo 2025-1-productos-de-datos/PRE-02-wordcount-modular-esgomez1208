@@ -10,19 +10,14 @@ from homework.src._internals.write_word_counts import write_word_counts
 
 def main():
 
-    # mover a la función read_all_lines
     all_lines = read_all_lines()
 
-    # mover a "preprocess_lines"
     all_lines = preprocess_lines(all_lines)
 
-    # mover a "split_in_words"
     words = split_into_words(all_lines)
 
-    # mover a "count_words"
     counter = count_words(words)
 
-    ##
     write_word_counts(counter)
 
 
